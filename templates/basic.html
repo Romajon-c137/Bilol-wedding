@@ -1,15 +1,269 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="ru">
 
-    
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таклифнома</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Forum&family=Frank+Ruhl+Libre:wght@300..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../static/basic/css.css">
+</head>
+
+<body class="loading">
+  <div id="loader-wrapper">
+    <div class="loader">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <div id="scroll-hint"></div>
+  <div class="invitation-container">
+    <div class="background-frame"></div>
+
+    <div class="decorative-elements">
+      <div class="flower-5"></div>
+      <div class="svg-line">
+        <img src="../static/basic/img/line.svg" alt="decorative line" width="6" height="215">
+      </div>
+      <div class="svg-line svg_line_1">
+        <img src="../static/basic/img/line1.svg" alt="decorative line" width="6" height="215">
+      </div>
+
+      <div class="decorative-elements_flower">
+        <div class="flower-22"></div>
+        <div id="flower" class="flower-1">
+          <div id="circle-holder"></div>
+        </div>
+        <div class="flower-2"></div>
+        <div class="flower-3"></div>
+        <div class="flower-4"></div>
+        <div class="leaf-1"></div>
+        <div class="leaf-2"></div>
+        <div class="leaf-3"></div>
+        <div class="leaf-4"></div>
+        <div class="leaf-5"></div>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="brand-logo">
+        <img src="../static/basic/img/r&m.png" alt="">
+      </div>
+      <div class="title quote">Таклифнома</div> <!-- Добавил класс -->
+      <div class="date-container">
+        <div class="date-number number quote">07</div> <!-- Добавил класс -->
+        <div class="content__date_boll"></div>
+        <div class="date-number number quote">07</div> <!-- Добавил класс -->
+        <div class="content__date_boll"></div>
+        <div class="date-number number quote">25</div> <!-- Добавил класс -->
+      </div>
+      <div class="bottom-text quote">
+        Биз учун бу муборак кун<br>
+        Сиз ва оила аъзоларингизсиз<br>
+        тўлиқ бўлмайди.
+      </div>
+    </div>
+  </div>
+  <div class="Leneee">
+    <div class="Leneee_1">
+
+    </div>
+  </div>
+  <section class="section_2">
+    <div class="section_2_title">
+      <h1>Ассалому алайкум, ҳурматли
+        {% if name %}
+
+        “{{ name }}”
+
+        {% else %}
+        <div></div>
+        {% endif%}
+      </h1>
+      <p>
+        Сизни 7-июль куни бўлиб ўтадиган никоҳ тўйимиз муносабати билан болиб отадиган наҳорги нонуштага таклиф
+        киламиз
+      </p>
+    </div>
+    <div class="Leneee">
+      <div class="Leneee_1">
+
+      </div>
+    </div>
+    <div class="section_2_stages">
+      <div class="section_2_stage_item">
+        <div class="section_2_stage_item_text">
+          <p>Нахорги нонушта</p>
+        </div>
+        <div class="section_2_stage_item_time">
+          <div class="section_2_stage_item_time_boll"></div>
+          <div class="section_2_stage_item_time_line"></div>
+          <p>06:00</p>
+        </div>
+      </div>
+      <div class="section_2_stage_item">
+
+        <div class="section_2_stage_item_text">
+          <p>Аёллар учун: <br>(Тугунсиз)</p>
+        </div>
+        <div class="section_2_stage_item_time">
+          <div class="section_2_stage_item_time_boll section_2_stage_item_time_boll_2"></div>
+          <p>10:00</p>
+        </div>
+      </div>
+      <div class="section_2_stage_item">
+
+        <div class="section_2_stage_item_text">
+          <p>Кортеж</p>
+        </div>
+        <div class="section_2_stage_item_time">
+          <div class="section_2_stage_item_time_boll"></div>
+          <div class="section_2_stage_item_time_line"></div>
+
+          <p>13:00</p>
+        </div>
+      </div>
+      <div class="section_2_stage_item">
+
+        <div class="section_2_stage_item_text">
+          <p>Фуршет
+            манзил: Разакова 24 <br> “Орто Азия”</p>
+        </div>
+        <div class="section_2_stage_item_time">
+          <div class="section_2_stage_item_time_boll section_2_stage_item_time_boll_2"></div>
+          <p>16:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="Leneee">
+    <div class="Leneee_1"></div>
+  </div>
+  <div class="block_2">
+    <div class="content_block_2">
+      <div class="content_block_2_top">
+        <div class="block_2_item">
+          <span id="days" class="quote">0</span>
+          <p class="label quote">Кун</p>
+        </div>
+      </div>
+      <div class="content_block_2_down">
+        <div class="block_2_item">
+          <span id="hours" class="quote">0</span>
+          <div class="label quote">Соат</div>
+        </div>
+        <div class="contentdate_boll"></div>
+        <div class="block_2_item">
+          <span id="minutes" class="quote">0</span>
+          <div class="label quote">Минут</div>
+        </div>
+        <div class="contentdate_boll"></div>
+        <div class="block_2_item">
+          <span id="seconds" class="quote">0</span>
+          <div class="label quote">Секунд</div>
+        </div>
+      </div>
+    </div>
+    <img src="../static/basic/img/block_3.png" alt="">
+  </div>
+  <div class="Leneee">
+    <div class="Leneee_1"></div>
+  </div>
+
+  <div class="title quote">Уй манзили <br> (Ориентир Кафе Али-повар)</div> <!-- Добавил класс -->
+
+  <div class="map-block">
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f07708c7fc0873c4bddd8a3be1b3db3826273091d710ea668da4ddb490271e3&amp;source=constructor"
+      width="870" height="549" frameborder="0"></iframe>
+  </div>
+
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- SplitText -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+
+
+  <!-- Твой файл -->
+  <script src="../static/basic/app.js"></script>
+
+
+
+  <script>
+    let hasScrolled = false;
+    const hint = document.getElementById("scroll-hint");
+
+    // Если пользователь скроллит — помечаем как активного
+    window.addEventListener("scroll", () => {
+      hasScrolled = true;
+      hint.style.opacity = 0;
+    });
+
+    // Через 10 секунд показываем подсказку, если не скроллил
+    setTimeout(() => {
+      if (!hasScrolled) {
+        hint.style.opacity = 1;
+      }
+    }, 20000);
+  </script>
+
+
+
+
+  <script>
+    // Установить дату окончания отсчета
+    const targetDate = new Date('2025-07-07T00:00:00').getTime();
+
+    function updateTimer() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        document.querySelector('.timer').innerHTML = 'Время вышло!';
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = days;
+      document.getElementById('hours').textContent = hours;
+      document.getElementById('minutes').textContent = minutes;
+      document.getElementById('seconds').textContent = seconds;
+    }
+
+    // Запуск таймера каждую секунду
+    const timerInterval = setInterval(updateTimer, 1000);
+
+    // Первый запуск сразу
+    updateTimer();
+  </script>
+
 </body>
+
 </html>
